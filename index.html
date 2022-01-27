@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>What is React.js?</section>
+					<section>React.js is the most popular front-end JavaScript library for building Web applications. </section>
+					<section>React.js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. </section>
+				  </section>
+				  <section>
+					<section>What are the React.js Features?</section>
+					<section>
+						<ul>
+							<li class="fragment">React is declarative</li>
+							<li class="fragment">React is simple</li>
+							<li class="fragment">React is component based</li>
+							<li class="fragment">React supports server side</li>
+							<li class="fragment">React is extensive</li>
+							<li class="fragment">React is fast </li>
+							<li class="fragment">React is easy to learn </li>
+						</ul>
+					</section>
+				  </section>
+				  <section>
+					<section>JSX</section>
+					<section>This is a special dialect of javascript for describing markup, thanks to which you can insert html tags into js code.</section>
+				  </section>
+				  <section>
+					   <section>Single-Way data flow</section>
+					<section><img data-src="https://krify.co/wp-content/uploads/2019/06/Single-Way-data-flow.jpg" alt="icon"></section>
+					<section>Differences between props and state?</section>
+					<section>
+						<p>Props</p>
+						<ul>
+							<li class="fragment">Come outside;</li>
+							<li class="fragment">Immutable;</li>
+							<li class="fragment">Designed to control the component from the outside;</li>
+						</ul>
+					</section>
+					<section>
+						<p>State</p>
+						<ul>
+							<li class="fragment">The internal state of the component;</li>
+							<li class="fragment">The component itself manages its state (changes it);</li>
+							<li class="fragment">Designed to save information inside the component during its lifetime;</li>
+						</ul>
+					</section>
+				  </section>
+				  <section>
+					<section>Hooks</section>
+					<section>
+						<p>What is the useState Hook?</p>
+						<p>To make it possible to have the changes reflected in the DOM, we have to use a React hook called useState.</p>
+					</section>
+					<section>
+						<p>What is the useEffect Hook?</p>
+						<p>The Effect Hook, just like the name implies, carries out an effect each time there is a state change. By default, it runs after the first render and every time the state is updated.</p>
+					</section>
+					<section>
+						<p>What is the useCallback Hook?</p>
+						<p>Returns a memoized callback. </p>
+					</section>
+				  </section>
+				  <section>
+					<section>Virtual Document Object Model</section>
+					<section><img data-src="https://habrastorage.org/webt/eq/p1/ff/eqp1ffv7pfwux34or4iytxpumli.png" alt="icon"></section>
+				  </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
